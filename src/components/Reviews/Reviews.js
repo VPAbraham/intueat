@@ -13,7 +13,7 @@ const Reviews = (props) => {
     <div className='review-container'>
       <p>{review.rating}</p>
       <h3>{review.name}</h3>
-
+      <p>{review.review}</p>
     </div>
   )
 
@@ -27,7 +27,7 @@ const Reviews = (props) => {
           <p>{reviews.length} Reviews</p>
         </div>
        <section>
-
+        {reviewList}
        </section>
       </div>
     </div>
