@@ -16,7 +16,10 @@ class App extends Component{
       location: chefData.location,
       about: chefData.about,
       tags: chefData.tags,
-      photos: chefData.photos
+      photos: chefData.photos,
+      experience: chefData.experience,
+      requirements: chefData.requirements,
+      includes: chefData.includes
     }
   }
 
@@ -31,6 +34,9 @@ class App extends Component{
         accolades={this.state.accolades} 
         location={this.state.location}
         about={this.state.about}
+        experience={this.state.experience}
+        requirements={this.state.requirements}
+        includes={this.state.includes}
         />
         {/* BarLeft is the container for most of the chef-related data output */}
         <BarRight />
