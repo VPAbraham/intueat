@@ -11,7 +11,7 @@ const images = [chef1, chef2, chef3];
 const ImageGal = () => {
   return (
     <div className='image-gal'>
-
+      
     </div>
   )
 }
