@@ -22,7 +22,7 @@ const Reviews = (props) => {
       <div className='chef-reviews--header'>
         <h2>Ratings & Reviews</h2>
         <div>
-          <img src={star}/>
+          <img alt='star-symbol' src={star}/>
           <h3>{reviewAverage}</h3>
           <p>{reviews.length} Reviews</p>
         </div>
