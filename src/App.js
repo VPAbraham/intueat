@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import Header from './components/Header/Header';
 import ChefInfo from './components/Chef-info/Chef-info';
+import ChefBio from './components/Chef-bio/Chef-bio';
 import { chefData } from './assets/chef-data';
-import logo from './logo.svg';
-import brewerLogo from './assets/brewer-digital.png';
 import './App.scss';
 
 class App extends Component{
@@ -24,6 +23,7 @@ class App extends Component{
     <div className="App">
       <Header />
       <ChefInfo name={this.state.name} accolades={this.state.accolades} location={this.state.location}/>
+      <ChefBio />
     </div>
   );
   }
