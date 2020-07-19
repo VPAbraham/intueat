@@ -5,5 +5,7 @@ const BarRight = () => {
     <div className='bar-right'>
 
     </div>
-  )
-}
+  );
+};
+
+export default BarRight;
