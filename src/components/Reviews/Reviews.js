@@ -1,10 +1,37 @@
 import React from 'react';
 import './Reviews.scss';
+import star from '../../assets/star.png';
 
 const Reviews = (props) => {
-  return (
-    <div className='chef-reviews'>
+  let { reviews } = props;
+  const reviewAverage = (reviews.reduce((acc, review) =>{
+    acc += review.rating;
+    return acc;
+  }, 0)) / reviews.length; 
+
+  let reviewList = reviews.map(review =>
+    <div className='review-container'>
+      <p>{review.rating}</p>
+      <h3>{review.name}</h3>
 
     </div>
   )
+
+  return (
+    <div className='chef-reviews'>
+      <div className='chef-reviews--header'>
+        <h2>Ratings & Reviews</h2>
+        <div>
+          <img src={star}/>
+          <h3>{reviewAverage}</h3>
+          <p>{reviews.length} Reviews</p>
+        </div>
+       <section>
+
+       </section>
+      </div>
+    </div>
+  )
 }
+
+export default Reviews;

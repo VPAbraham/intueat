@@ -1,6 +1,7 @@
 import React from 'react';
 import ChefInfo from '../Chef-info/Chef-info';
 import ChefBio from '../Chef-bio/Chef-bio';
+import Reviews from '../Reviews/Reviews';
 
 const BarLeft = (props) => {
   let {name, 
@@ -9,8 +10,10 @@ const BarLeft = (props) => {
     about, 
     experience, 
     requirements, 
-    includes} = props;
-    
+    includes,
+    reviews
+    } = props;
+
   return (
     <div className='bar-left'>
       <ChefInfo 
@@ -24,6 +27,7 @@ const BarLeft = (props) => {
       requirements={requirements}
       includes={includes}
       />
+      <Reviews reviews={reviews}/>
     </div>
   );
 };

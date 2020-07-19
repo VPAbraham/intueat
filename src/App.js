@@ -19,31 +19,32 @@ class App extends Component{
       photos: chefData.photos,
       experience: chefData.experience,
       requirements: chefData.requirements,
-      includes: chefData.includes
+      includes: chefData.includes,
+      reviews: chefData.reviews
     }
   }
 
   render(){
-    console.log(chefData)
-  return (
-    <div className='App'>
-      <Header />
-      <div className='content-container'>
-        <BarLeft 
-        name={this.state.name} 
-        accolades={this.state.accolades} 
-        location={this.state.location}
-        about={this.state.about}
-        experience={this.state.experience}
-        requirements={this.state.requirements}
-        includes={this.state.includes}
-        />
-        {/* BarLeft is the container for most of the chef-related data output */}
-        <BarRight />
-        {/* BarRight is the container for the UI component that handles booking the chef */}
+    return (
+      <div className='App'>
+        <Header />
+        <div className='content-container'>
+          <BarLeft 
+          name={this.state.name} 
+          accolades={this.state.accolades} 
+          location={this.state.location}
+          about={this.state.about}
+          experience={this.state.experience}
+          requirements={this.state.requirements}
+          includes={this.state.includes}
+          reviews={this.state.reviews}
+          />
+          {/* BarLeft is the container for most of the chef-related data output */}
+          <BarRight />
+          {/* BarRight is the container for the UI component that handles booking the chef */}
+        </div>
       </div>
-    </div>
-  );
+    );
   }
 }
 
