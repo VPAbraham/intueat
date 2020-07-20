@@ -19,7 +19,9 @@ a:visited {
 .App {
 
   .content-container {
-    width: 60%;
+    width: 61%;
     margin: auto;
+    display: flex;
+    justify-content: space-between;
   }
 }
