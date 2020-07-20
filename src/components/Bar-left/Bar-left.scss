@@ -1,9 +1,16 @@
 @import '../../variables.scss';
 
+
+
 .bar-left {
   text-align: left;
   display: flex;
   flex-direction: column;
+
+  h2 {
+    font-size: 24px;
+    margin-top: 2vh;
+  }
 
   .line-divider {
     border: 1px solid $light-grey;

@@ -11,10 +11,10 @@ const Reviews = (props) => {
 
   return (
     <div className='chef-reviews'>
-      <div className='chef-reviews--header'>
+      <div className='reviews-header'>
         <h2>Ratings & Reviews</h2>
-        <div>
-          <img alt='star-symbol' src={star}/>
+        <div className='reviews-stats'>
+          <img className='star-img' alt='star-symbol' src={star}/>
           <h3>{reviewAverage}</h3>
           <p>{reviews.length} Reviews</p>
         </div>

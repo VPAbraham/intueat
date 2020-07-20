@@ -1,0 +1,21 @@
+@import '../../variables.scss';
+
+.chef-reviews {
+  .reviews-header {
+    .reviews-stats {
+      display: flex;
+      width: 180px;
+      justify-content: space-between;
+      min-width: 40px;
+      align-items: center;
+
+      .star-img {
+        height: 20px;
+      }
+
+      h3 {
+        font-size: 30px;
+      }
+    }
+  }
+}
