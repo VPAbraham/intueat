@@ -5,13 +5,16 @@
   text-align: center;
   border-radius: 4px;
   max-width: 100%;
+  min-width: 400px;
+  height: auto;
   padding: 2rem 1rem;
   background-color: $light-grey;
   display: flex;
   justify-content: space-between;
 
   .chef-portrait {
-    max-width: 75%;
+    width: 100%;
+    min-width: 300px;
     height: auto;
     border-radius: 5px;
     -webkit-box-shadow: 6px 12px 63px -25px rgba(0,0,0,0.75);
@@ -21,7 +24,7 @@
 
   .arw {
     height: 1rem;
-    margin: auto 0;
+    margin: auto 10px;
   }
 
   .left-arw  {

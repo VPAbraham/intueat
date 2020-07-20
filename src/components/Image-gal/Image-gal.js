@@ -16,6 +16,7 @@ const ImageGal = () => {
       <img className='arw left-arw' src={arrow} alt='directional arrow' />
       <img className='chef-portrait' src={chef1}/>
       <img className='arw right-arw' src={arrow} alt='directional arrow' />
+      {/* arrows control TBA photo scrolling functionality */}
     </div>
   )
 }

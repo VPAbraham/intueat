@@ -3,19 +3,11 @@ import './Reviews.scss';
 import star from '../../assets/star.png';
 
 const Reviews = (props) => {
-  let { reviews } = props;
+  let { reviews, lineDivider } = props;
   const reviewAverage = (reviews.reduce((acc, review) =>{
     acc += review.rating;
     return acc;
   }, 0)) / reviews.length; 
-
-  let reviewList = reviews.map(review =>
-    <div className='review-container'>
-      <p>{review.rating}</p>
-      <h3>{review.name}</h3>
-      <p>{review.review}</p>
-    </div>
-  )
 
   return (
     <div className='chef-reviews'>
@@ -26,8 +18,15 @@ const Reviews = (props) => {
           <h3>{reviewAverage}</h3>
           <p>{reviews.length} Reviews</p>
         </div>
+        {lineDivider}
        <section>
-        {reviewList}
+        {reviews.map(review =>
+        <div className='review-container'>
+          <p>{review.rating}</p>
+          <h3>{review.name}</h3>
+          <p>{review.review}</p>
+          {lineDivider}
+        </div>)}
        </section>
       </div>
     </div>

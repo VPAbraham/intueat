@@ -1,5 +1,17 @@
+@import '../../variables.scss';
+
 .bar-left {
   text-align: left;
   display: flex;
   flex-direction: column;
+
+  .line-divider {
+    border: 1px solid $light-grey;
+    width: 99%;
+    height: 0;
+    margin: 2.5rem 0;
+    opacity: 40%;
+  }
 }
+
+ 

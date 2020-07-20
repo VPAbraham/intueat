@@ -1,4 +1,5 @@
 import React from 'react';
+import './Bar-left.scss';
 import ImageGal from '../Image-gal/Image-gal';
 import ChefInfo from '../Chef-info/Chef-info';
 import ChefBio from '../Chef-bio/Chef-bio';
@@ -14,6 +15,9 @@ const BarLeft = (props) => {
     includes,
     reviews
     } = props;
+  
+  let lineDivider = <div className='line-divider'></div>;
+  {/* reusable line break, passed to other components for consistency/reusability */}
 
   return (
     <div className='bar-left'>
@@ -23,13 +27,15 @@ const BarLeft = (props) => {
       accolades={accolades} 
       location={location}
       />
+      {lineDivider}
       <ChefBio 
       about={about}
       experience={experience}
       requirements={requirements}
       includes={includes}
+      lineDivider={lineDivider}
       />
-      <Reviews reviews={reviews}/>
+      <Reviews reviews={reviews} lineDivider={lineDivider}/>
     </div>
   );
 };
