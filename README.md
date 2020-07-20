@@ -13,3 +13,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 2. Form functionality
 3. Mobile reponsiveness
 4. Hamburger menu
+5. 'Time ago' timestamp posting duration
