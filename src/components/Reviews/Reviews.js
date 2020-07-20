@@ -14,7 +14,7 @@ const Reviews = (props) => {
     for (let i = 0; i < num ; i++) {
       stars.push(<img className='star-rating' src={star} alt='star'/>)
     }
-    return stars
+    return stars.map(star => star)
 
   }
   
@@ -32,7 +32,7 @@ const Reviews = (props) => {
       <section>
         {reviews.map(review =>
         <div className='review-container'>
-          {starCount}
+          {starCount(review.rating)}
           <h3>{review.name}</h3>
           <p>{review.review}</p>
           {lineDivider}
