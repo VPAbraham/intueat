@@ -1,7 +1,12 @@
-$red-orange: #fe4701;
-$light-grey: #d1d3d4;
-$dark-grey: #636466;
+@import './variables.scss';
 
+h1, h2, h3 {
+  font-family: $header-font;
+}
+
+p, li {
+  font-family: $paragraph-font;
+}
 
 .App {
 
