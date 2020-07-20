@@ -13,7 +13,8 @@ const BarLeft = (props) => {
     experience, 
     requirements, 
     includes,
-    reviews
+    reviews,
+    tags
     } = props;
   
   let lineDivider = <div className='line-divider'></div>;
@@ -25,6 +26,7 @@ const BarLeft = (props) => {
       name={name} 
       accolades={accolades} 
       location={location}
+      tags={tags}
       />
       {lineDivider}
       <ChefBio 

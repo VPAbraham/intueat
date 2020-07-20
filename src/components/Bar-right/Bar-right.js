@@ -12,12 +12,14 @@ const BarRight = (props) => {
 
   return (
     <div className='bar-right'>
-      <div>
-        <h4>$000</h4>
-        <p>per person</p>
+      <div className='cost-info'>
+        <div>
+          <h4 className='dollar-cost'>$000</h4>
+          <p className='per-person'>per person</p>
+        </div>
         <div>
           <img src={starLogo}/>
-          <p>{reviewAverage}</p>
+          <p className='score-num'>{reviewAverage}</p>
         </div>
       </div>
     </div>

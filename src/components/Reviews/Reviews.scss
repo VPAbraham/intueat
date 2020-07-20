@@ -4,7 +4,7 @@
   .reviews-header {
     .reviews-stats {
       display: flex;
-      width: 180px;
+      width: 170px;
       justify-content: space-between;
       min-width: 40px;
       align-items: center;
@@ -19,6 +19,7 @@
 
       p {
         color: $dark-grey;
+        font-size: 14px;
       }
     }
   }

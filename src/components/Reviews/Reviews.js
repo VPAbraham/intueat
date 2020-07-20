@@ -7,7 +7,17 @@ const Reviews = (props) => {
   const reviewAverage = (reviews.reduce((acc, review) =>{
     acc += review.rating;
     return acc;
-  }, 0)) / reviews.length; 
+  }, 0)) / reviews.length;
+  
+  let starCount = (num) => {
+    let stars = [];
+    for (let i = 0; i < num ; i++) {
+      stars.push(<img className='star-rating' src={star} alt='star'/>)
+    }
+    return stars
+
+  }
+  
 
   return (
     <div className='chef-reviews'>
@@ -22,7 +32,7 @@ const Reviews = (props) => {
       <section>
         {reviews.map(review =>
         <div className='review-container'>
-          <p>{review.rating}</p>
+          {starCount}
           <h3>{review.name}</h3>
           <p>{review.review}</p>
           {lineDivider}
