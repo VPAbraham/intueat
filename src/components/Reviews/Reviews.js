@@ -19,7 +19,7 @@ const Reviews = (props) => {
           <p>{reviews.length} Reviews</p>
         </div>
         {lineDivider}
-       <section>
+      <section>
         {reviews.map(review =>
         <div className='review-container'>
           <p>{review.rating}</p>
@@ -27,7 +27,7 @@ const Reviews = (props) => {
           <p>{review.review}</p>
           {lineDivider}
         </div>)}
-       </section>
+      </section>
       </div>
     </div>
   )

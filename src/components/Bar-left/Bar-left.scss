@@ -6,18 +6,23 @@
   text-align: left;
   display: flex;
   flex-direction: column;
+  width: 60%;
 
   h2 {
-    font-size: 24px;
+    font-size: 16px;
     margin-top: 2vh;
+  }
+
+  p {
+    line-height: 24px;
+    font-size: 12px;
   }
 
   .line-divider {
     border: 1px solid $light-grey;
     width: 99%;
     height: 0;
-    margin: 2.5rem 0;
-    opacity: 40%;
+    margin: 1.5rem 0;
   }
 }
 

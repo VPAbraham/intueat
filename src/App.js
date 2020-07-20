@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Header from './components/Header/Header';
-
+import ImageGal from './components/Image-gal/Image-gal';
 import BarRight from './components/Bar-right/Bar-right';
 import BarLeft from './components/Bar-left/Bar-left';
 
@@ -28,6 +28,7 @@ class App extends Component{
     return (
       <div className='App'>
         <Header />
+        <ImageGal />
         <div className='content-container'>
           <BarLeft 
           name={this.state.name} 

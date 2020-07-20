@@ -8,6 +8,14 @@ p, li {
   font-family: $paragraph-font;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
 .App {
 
   .content-container {

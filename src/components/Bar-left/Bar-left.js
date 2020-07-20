@@ -21,7 +21,6 @@ const BarLeft = (props) => {
 
   return (
     <div className='bar-left'>
-      <ImageGal />
       <ChefInfo 
       name={name} 
       accolades={accolades} 
