@@ -4,8 +4,8 @@ import './Header.scss';
 
 const Header = () => {
   return(
-    <header className="page-header">
-      <img className='logo' src={logo} alt="logo"/>
+    <header className='page-header'>
+      <img src={logo} alt="logo"/>
       <div>
         <button className='sign-in'>Sign In</button>
         <button className='create-account'>Create Account</button>
