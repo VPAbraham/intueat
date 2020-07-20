@@ -1,17 +1,37 @@
+@import '../../variables.scss';
+
 .page-header{
   display: flex;
   justify-content: space-between;
+  padding: .8rem;
 
-  .logo {
-    height: 1.5rem;
+  img {
+    height: 2vw;
+    min-height: 1.6rem;
+
     margin: 15px 0 0 15px;
   }
 
   div {
-    margin: 15px 0 0 15px;
-    width: 200px;
+    margin: 10px;
+    width: 250px;
     display: flex;
     justify-content: space-between;
+
+    .sign-in {
+      font-weight: 500;
+      margin: auto 0;
+    }
+
+    .create-account {
+      color: $red-orange;
+      font-weight: 500;
+      border: 1px solid $red-orange;
+      padding: 10px 24px;
+      border-radius: 25px;
+      margin: auto 0;
+      box-shadow: 10px 10px 60px -28px rgba(0,0,0,0.75);
+    }
   }
   
 }

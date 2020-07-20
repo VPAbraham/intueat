@@ -1,3 +1,27 @@
+@import '../../variables.scss';
+
 .bar-left {
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+
+  h2 {
+    font-size: 16px;
+    margin-top: 2vh;
+  }
+
+  p {
+    line-height: 18px;
+    font-size: 10px;
+  }
+
+  .line-divider {
+    border: 1px solid $light-grey;
+    width: 99%;
+    height: 0;
+    margin: 1.5rem 0;
+  }
 }
+
+ 
