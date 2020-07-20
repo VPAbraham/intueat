@@ -41,7 +41,7 @@ class App extends Component{
           reviews={this.state.reviews}
           />
           {/* BarLeft is the container for most of the chef-related data output */}
-          <BarRight />
+          <BarRight reviews={this.state.reviews}/>
           {/* BarRight is the container for the UI component that handles booking the chef */}
         </div>
       </div>
