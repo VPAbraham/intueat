@@ -1,0 +1,19 @@
+.page-header{
+  display: flex;
+  justify-content: space-between;
+
+  .logo {
+    height: 1.5rem;
+    margin: 15px 0 0 15px;
+  }
+
+  div {
+    margin: 15px 0 0 15px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+}
+
+
