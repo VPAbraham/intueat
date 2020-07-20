@@ -1,3 +1,7 @@
+$red-orange: #fe4701;
+$light-grey: #d1d3d4;
+$dark-grey: #636466;
+
 .page-header{
   display: flex;
   justify-content: space-between;
@@ -9,16 +13,20 @@
 
   div {
     margin: 15px 0 0 15px;
-    width: 200px;
+    width: 250px;
     display: flex;
     justify-content: space-between;
 
     .sign-in {
-
+      font-weight: 500;
     }
 
     .create-account {
-      
+      color: $red-orange;
+      font-weight: 500;
+      border: 1px solid $red-orange;
+      padding: 8px;
+      border-radius: 20px;
     }
   }
   

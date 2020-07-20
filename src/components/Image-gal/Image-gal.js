@@ -1,4 +1,5 @@
 import React from 'react';
+import './Image-gal.scss';
 import ImageGallery from 'react-image-gallery';
 import chef1 from '../../assets/head-chef.jpeg';
 import chef2 from '../../assets/chef-2.jpg';

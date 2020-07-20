@@ -7,8 +7,8 @@ const Header = () => {
     <header className='page-header'>
       <img src={logo} alt="logo"/>
       <div>
-        <button className='sign-in'>Sign In</button>
-        <button className='create-account'>Create Account</button>
+        <a className='sign-in'>Sign In</a>
+        <a className='create-account'>Create Account</a>
       </div>
 
     </header>
