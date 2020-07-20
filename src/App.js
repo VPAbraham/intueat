@@ -3,6 +3,7 @@ import Header from './components/Header/Header';
 import ImageGal from './components/Image-gal/Image-gal';
 import BarRight from './components/Bar-right/Bar-right';
 import BarLeft from './components/Bar-left/Bar-left';
+import Footer from './components/Footer/Footer';
 
 import { chefData } from './assets/chef-data';
 import './App.scss';
@@ -20,7 +21,9 @@ class App extends Component{
       experience: chefData.experience,
       requirements: chefData.requirements,
       includes: chefData.includes,
-      reviews: chefData.reviews
+      reviews: chefData.reviews,
+      tags: chefData.tags
+
     }
   }
 
@@ -39,11 +42,13 @@ class App extends Component{
           requirements={this.state.requirements}
           includes={this.state.includes}
           reviews={this.state.reviews}
+          tags={this.state.tags}
           />
           {/* BarLeft is the container for most of the chef-related data output */}
-          <BarRight />
+          <BarRight reviews={this.state.reviews}/>
           {/* BarRight is the container for the UI component that handles booking the chef */}
         </div>
+        <Footer />
       </div>
     );
   }

@@ -1,0 +1,39 @@
+@import '../../variables.scss';
+
+
+.footer {
+  margin-top: 20vh;
+  color: $dark-grey;
+
+  .question-link {
+    height: 30vh;
+    background-color: $red-orange;
+    color: white;
+    font-family: $header-font;
+    text-align: center;
+    padding-top: 12vh;
+
+    h4 {
+      font-size: 2rem;
+    }
+
+    a {
+      border: solid 1px white;
+      padding: 10px 24px;
+      border-radius: 25px;
+    }
+  }
+
+  .rights-res {
+    display: flex;
+    justify-content: space-between;
+    padding: 2vh 2vw;
+
+    span {
+      margin: auto 0;
+      display: flex;
+      justify-content: space-between;
+      width: 35vh;
+    }
+  }
+}
